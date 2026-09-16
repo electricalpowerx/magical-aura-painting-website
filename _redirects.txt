@@ -1,0 +1,103 @@
+# Force HTTPS
+http://magicalaurapainting.ca/* https://magicalaurapainting.ca/:splat 301!
+
+# Force HTTPS for www
+http://www.magicalaurapainting.ca/* https://magicalaurapainting.ca/:splat 301!
+
+# Redirect www to non-www (optional but common for cleanliness)
+https://www.magicalaurapainting.ca/* https://magicalaurapainting.ca/:splat 301!
+
+# Clean trailing slashes (optional)
+https://magicalaurapainting.ca/:splat/ https://magicalaurapainting.ca/:splat 301!
+
+# ============================================================
+# GOOGLE SEARCH CONSOLE VERIFICATION
+# The verification file MUST be accessible at the exact URL with .html
+# Google does not accept the version without the extension.
+# This rule must come BEFORE any general .html stripping rules.
+# ============================================================
+/googledebbbf9ea2128906.html /googledebbbf9ea2128906.html 200!
+
+# Redirect old .html URLs to clean URLs (important for SEO to avoid duplicate content)
+# Core pages
+/about.html /about 301!
+/blog.html /blog 301!
+/contact.html /contact 301!
+/pricing.html /pricing 301!
+/projects.html /projects 301!
+
+# Service pages
+/commercial-painting-surrey.html /commercial-painting-surrey 301!
+/trim-and-doors-surrey.html /trim-and-doors-surrey 301!
+/cabinet-painting-surrey.html /cabinet-painting-surrey 301!
+/deck-fence-staining-surrey.html /deck-fence-staining-surrey 301!
+/interior-painting-surrey.html /interior-painting-surrey 301!
+/cabinet-painting-surrey.html /cabinet-painting-surrey 301!
+
+# Location pages
+/painters-burnaby.html /painters-burnaby 301!
+/painters-coquitlam.html /painters-coquitlam 301!
+/painters-delta.html /painters-delta 301!
+/painters-langley.html /painters-langley 301!
+/painters-maple-ridge.html /painters-maple-ridge 301!
+/painters-new-westminster.html /painters-new-westminster 301!
+/painters-pitt-meadows.html /painters-pitt-meadows 301!
+/painters-vancouver.html /painters-vancouver 301!
+/painters-white-rock.html /painters-white-rock 301!
+
+# Blog posts
+/blog/cabinet-painting-value.html /blog/cabinet-painting-value 301!
+/blog/paint-prep-no-mess-guide.html /blog/paint-prep-no-mess-guide 301!
+/blog/when-to-repaint-interior.html /blog/when-to-repaint-interior 301!
+
+# ============================================================
+# FULL SEO SILO SUPPORT (Massive expansion - 300+ pages)
+# Generated neighborhood, service, and location pages
+# ============================================================
+
+# General: strip .html for clean URLs (SEO best practice, avoids duplicates)
+# This catches the hundreds of new generated pages
+/*.html /:splat 301!
+
+# Support the detailed local/ silo pages (popcorn ceilings, interior painting, cabinet, drywall repair, etc. per city)
+/local/* /local/:splat 200!
+
+# Services sub-pages (detailed service landing pages)
+/services/* /services/:splat 200!
+
+# Locations / neighborhood detail pages
+/locations/* /locations/:splat 200!
+
+# Projects sub-pages
+/projects/* /projects/:splat 200!
+
+# Additional root-level location & service pages added in expansions (no .html versions)
+/painters-abbotsford /painters-abbotsford 200!
+/painters-chilliwack /painters-chilliwack 200!
+/painters-mission /painters-mission 200!
+/painters-pitt-meadows /painters-pitt-meadows 200!
+/painters-surrey /painters-surrey 200!
+/cloverdale /cloverdale 200!
+/fleetwood /fleetwood 200!
+/fraser-heights /fraser-heights 200!
+/guildford /guildford 200!
+/newton /newton 200!
+/ocean-park /ocean-park 200!
+/panorama-ridge /panorama-ridge 200!
+/south-surrey /south-surrey 200!
+
+# New blog posts from expansions
+/blog/interior-painting-quote-bc.html /blog/interior-painting-quote-bc 301!
+/blog/painting-quote-lower-mainland.html /blog/painting-quote-lower-mainland 301!
+/blog/exterior-painting-guide-bc.html /blog/exterior-painting-guide-bc 301!
+/blog/popcorn-ceiling-guide.html /blog/popcorn-ceiling-guide 301!
+/blog/when-to-repaint-your-home.html /blog/when-to-repaint-your-home 301!
+/blog/colour-consult-worth-it.html /blog/colour-consult-worth-it 301!
+/blog/deck-staining-worth-it.html /blog/deck-staining-worth-it 301!
+/blog/new-home-painting-guide.html /blog/new-home-painting-guide 301!
+
+# AI / LLM optimization files (explicitly allowed in robots.txt)
+/llms.txt /llms.txt 200!
+/llms-trim.txt /llms-trim.txt 200!
+/llms-cabinets.txt /llms-cabinets.txt 200!
+/llms-interior.txt /llms-interior.txt 200!
