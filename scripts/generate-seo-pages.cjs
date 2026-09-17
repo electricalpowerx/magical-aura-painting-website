@@ -1012,7 +1012,7 @@ function blogPostPage(post) {
  </a>`)
  .join("\n ");
 
- return `${head(post.metaTitle, post.metaDesc, canonical, schemas, "/images/interior-painting.jpg")}
+ return `${head(post.metaTitle, post.metaDesc, canonical, schemas, "/images/trade-interior-living-room.png")}
 ${nav()}
 ${breadcrumbBar(crumbs)}
 

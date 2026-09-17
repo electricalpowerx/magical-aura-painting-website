@@ -103,7 +103,7 @@ const SERVICES = [
  "Interior Painting Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Interior walls, ceilings and rooms painted with clean prep and no mess left behind. Serving Surrey and the Lower Mainland. Request a Free Quote.",
- image: "interior-painting.jpg",
+ image: "trade-interior-living-room.png",
  heroSub:
  "Walls, ceilings and rooms painted with careful prep, even coats and a tidy finish.",
  intro: [
@@ -185,7 +185,7 @@ const SERVICES = [
  "Cabinet Painting Surrey & Lower Mainland | Magical Aura Pro Painters Ltd",
  metaDesc:
  "Kitchen and bathroom cabinets painted for a fresh finish without a full replacement. Surrey and the Lower Mainland. Request a Free Quote.",
- image: "cabinet painting.JPG",
+ image: "trade-cabinets.png",
  heroSub:
  "Kitchen and bathroom cabinets painted for a fresh finish without a full replacement.",
  intro: [
@@ -350,7 +350,7 @@ const SERVICES = [
  "Deck & Fence Staining Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Decks and fences stained to handle Lower Mainland weather. Wash, prep and even coats. Request a Free Quote.",
- image: "backyard-deck-fence-staining-dusk.jpg",
+ image: "trade-exterior-home.png",
  heroSub:
  "Decks and fences stained to handle Lower Mainland weather.",
  intro: [
@@ -391,7 +391,7 @@ const SERVICES = [
  "Wood Staining Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Accent walls, millwork, fences and outdoor wood stained evenly. Surrey and the Lower Mainland. Request a Free Quote.",
- image: "backyard-deck-fence-staining-dusk.jpg",
+ image: "trade-exterior-home.png",
  heroSub:
  "Accent walls, millwork and outdoor wood stained evenly, with nearby surfaces protected.",
  intro: [
@@ -434,7 +434,7 @@ const SERVICES = [
  "Commercial Painter Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Offices, retail, warehouses and light industrial painted around your hours. Surrey and the Lower Mainland. Request a Free Quote.",
- image: "commercial-painting-project-surrey.jpg",
+ image: "service-commercial-painting.jpg",
  heroSub:
  "Retail, office, warehouse and light industrial — painted around your hours, with clean prep and a tidy finish.",
  intro: [
@@ -475,7 +475,7 @@ const SERVICES = [
  "Tenant Improvement Painter Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Painting for commercial unit painting, retail and office fit-outs. On-schedule, coordinated with your trades. Request a Free Quote.",
- image: "commercial-painting-project-surrey.jpg",
+ image: "service-commercial-painting.jpg",
  heroSub:
  "Opening or renovating a commercial space? We deliver the painting scope on time — walls, ceilings, millwork — coordinated with every other trade.",
  intro: [
