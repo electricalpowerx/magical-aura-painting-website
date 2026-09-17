@@ -18,6 +18,15 @@ const SITE = {
   geo: { lat: "", lng: "" },
   sameAs: [],
   founded: "", yearsExperience: "", jobsCompleted: "", licenseNumber: "",
+
+  sisterSites: [
+    { name: "PowerX Electrical Ltd.", url: "https://powerxelectrical.ca/", tagline: "Surrey & Lower Mainland Electrician" },
+    { name: "RapidFlow Plumbing Ltd.", url: "https://rapidflowplumbing.ca", tagline: "Surrey & Lower Mainland Plumber" },
+    { name: "Benra Framing", url: "https://benra-framing.netlify.app", tagline: "Surrey & Lower Mainland Framing" },
+    { name: "East Coast AC & Heating", url: "https://eastcoastheating.netlify.app", tagline: "Surrey & Lower Mainland HVAC" },
+    { name: "Precision Tile & Stone Ltd.", url: "https://precisiontileandstone.ca", tagline: "Surrey & Lower Mainland Tile Contractor" },
+    { name: "TrueLevel Drywall Ltd.", url: "https://trueleveldrywall.ca", tagline: "Surrey & Lower Mainland Drywall Contractor" },
+  ],
 };
 
 /* Services that get a programmatic page for every city (service × city matrix).
@@ -53,7 +62,7 @@ const SERVICES = [
  "Trim & Door Painting Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Trim, doors and interior woodwork painted cleanly, with floors and hardware protected. Serving Surrey and the Lower Mainland. Request a Free Quote.",
- image: "fire alarm.jpg",
+ image: "trade-cabinets.png",
  heroSub:
  "Trim, doors and interior woodwork painted cleanly, with floors and hardware protected.",
  intro: [
@@ -135,7 +144,7 @@ const SERVICES = [
  "Exterior Painting Surrey & Lower Mainland | Magical Aura Pro Painters Ltd",
  metaDesc:
  "Siding, fascia, soffits and trim painted for Lower Mainland rain and sun. Clean prep, durable coats. Request a Free Quote.",
- image: "interior painting.jpg",
+ image: "trade-exterior-home.png",
  heroSub:
  "Siding, fascia, soffits and exterior trim painted to stand up to Lower Mainland weather.",
  intro: [
@@ -217,7 +226,7 @@ const SERVICES = [
  "Drywall Repair Surrey & Lower Mainland | Magical Aura Pro Painters Ltd",
  metaDesc:
  "Patch, sand and prime so the finish coat looks even. Drywall repair and paint prep in Surrey and the Lower Mainland. Request a Free Quote.",
- image: "house-rewire(2).jpg",
+ image: "trade-interior-living-room.png",
  heroSub:
  "Holes, cracks and texture mismatches patched, sanded and primed so the paint looks even.",
  intro: [
@@ -258,7 +267,7 @@ const SERVICES = [
  "Ceiling Painting & Popcorn Removal Surrey | Magical Aura",
  metaDesc:
  "Ceiling coats, popcorn skim or paint, and even coverage without splatter. Surrey and the Lower Mainland. Request a Free Quote.",
- image: "house rewire.jpg",
+ image: "trade-interior-living-room.png",
  heroSub:
  "Ceilings painted evenly — including popcorn and other textures you want to keep, skim, or coat.",
  intro: [
@@ -299,7 +308,7 @@ const SERVICES = [
  "Colour Consult Surrey & Lower Mainland | Magical Aura Pro Painters Ltd",
  metaDesc:
  "Help choosing paint colours and sheens for rooms, exteriors and cabinets. Surrey and the Lower Mainland. Request a Free Quote.",
- image: "led lighting.jpg",
+ image: "trade-interior-living-room.png",
  heroSub:
  "Help choosing colours and sheens that work with your light, floors and trim — then we paint them.",
  intro: [
@@ -341,7 +350,7 @@ const SERVICES = [
  "Deck & Fence Staining Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Decks and fences stained to handle Lower Mainland weather. Wash, prep and even coats. Request a Free Quote.",
- image: "van-guy.jpg",
+ image: "backyard-deck-fence-staining-dusk.jpg",
  heroSub:
  "Decks and fences stained to handle Lower Mainland weather.",
  intro: [
@@ -382,7 +391,7 @@ const SERVICES = [
  "Wood Staining Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Accent walls, millwork, fences and outdoor wood stained evenly. Surrey and the Lower Mainland. Request a Free Quote.",
- image: "exhaust fan.jpg",
+ image: "backyard-deck-fence-staining-dusk.jpg",
  heroSub:
  "Accent walls, millwork and outdoor wood stained evenly, with nearby surfaces protected.",
  intro: [
@@ -425,7 +434,7 @@ const SERVICES = [
  "Commercial Painter Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Offices, retail, warehouses and light industrial painted around your hours. Surrey and the Lower Mainland. Request a Free Quote.",
- image: "commercial project.jpg",
+ image: "commercial-painting-project-surrey.jpg",
  heroSub:
  "Retail, office, warehouse and light industrial — painted around your hours, with clean prep and a tidy finish.",
  intro: [
@@ -466,7 +475,7 @@ const SERVICES = [
  "Tenant Improvement Painter Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Painting for commercial unit painting, retail and office fit-outs. On-schedule, coordinated with your trades. Request a Free Quote.",
- image: "commercial project.jpg",
+ image: "commercial-painting-project-surrey.jpg",
  heroSub:
  "Opening or renovating a commercial space? We deliver the painting scope on time — walls, ceilings, millwork — coordinated with every other trade.",
  intro: [
@@ -507,7 +516,7 @@ const SERVICES = [
  "Strata Painter Surrey & Lower Mainland | Magical Aura",
  metaDesc:
  "Strata and multi-unit painting: common areas, parkade walls, suites and exterior buildings. Request a Free Quote.",
- image: "led lighting.jpg",
+ image: "trade-interior-living-room.png",
  heroSub:
  "Property managers and strata councils trust Magical Aura for common-area, suite and building painting across the Lower Mainland.",
  intro: [
@@ -548,7 +557,7 @@ const SERVICES = [
  "Paint Prep Surrey & Lower Mainland | Magical Aura Pro Painters Ltd",
  metaDesc:
  "Masking, sanding, priming and protection so the finish coat looks even. Homes and commercial spaces. Request a Free Quote.",
- image: "led lighting.jpg",
+ image: "trade-interior-living-room.png",
  heroSub:
  "Masking, sanding, priming and protection so the finish coat looks even — and the mess stays off your floors.",
  intro: [
@@ -589,7 +598,7 @@ const SERVICES = [
  "New-Home Painting Surrey & Lower Mainland | Magical Aura Pro Painters Ltd",
  metaDesc:
  "New construction finishing, builder touch-ups and first coats for new homes. Surrey and the Lower Mainland. Request a Free Quote.",
- image: "smoke detector.jpg",
+ image: "trade-interior-living-room.png",
  heroSub:
  "New construction finishing, builder touch-ups and first coats so a new home looks complete.",
  intro: [
