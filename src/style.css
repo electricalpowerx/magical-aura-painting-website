@@ -125,6 +125,17 @@ details[open] summary::after {
 #sticky-cta {
  @apply fixed bottom-0 left-0 right-0 z-50 md:hidden;
 }
+@media (max-width: 767px) {
+ body.has-sticky-cta {
+ padding-bottom: 5.25rem;
+ }
+}
+/* Collapsed directory link-building summary: hide default +/– if any */
+#link-to-us details summary::after {
+ content: "▾";
+ font-size: 0.9rem;
+ color: var(--px-text-muted);
+}
 
 /* Map container */
 .map-container iframe {
